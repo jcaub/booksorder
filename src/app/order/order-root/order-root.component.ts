@@ -18,4 +18,7 @@ export class OrderRootComponent implements OnInit {
   ngOnInit() {
   }
 
+  removeRow(row:OrderRow):void{
+    this.rows=this.rows.filter(r =>r !==row);
+  }
 }
